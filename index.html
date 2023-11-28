@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=""UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <div>
+                <a rel="highscore" href="./highscore.html">
+                    <button class="high-score-header" id="view-highscores">View High Scores</button>
+                </a>
+            </div>
+
+            <div class="timer">
+                <p>
+                    Time: <span id="timer">0</span>
+                </p>
+            </div>
+        </header>
+
+        <main class="quiz">
+            <div id="start-quiz">
+                <div class="beginning" id="start-screen">
+                    <h1 id="top">Coding Quiz Challenge</h1>
+                    <p>
+                        Try to answer the following code-related questions within the time limit. Keep in mind that
+                        incorrect answers will penalize your score/time by ten seconds!
+                    </p>
+                    <button id="start">Start Quiz</button>
+                </div>
+            </div>
+
+            <div class="hide" id="questions">
+                <h2 id="questionaire"></h2>
+                <div class="choices" id="choices"></div> 
+            </div>
+
+            <div class="hide" id="end-quiz">
+                <h2>All Done!</h2>
+                <p>Your final score is <span id="final-score"></span>
+                </p>
+                <p> Please enter your name:
+                    <input type="text" id="name" />
+                    <a rel="highscore" href="./highscore.html">
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+
+            <div id="feedback" 
+                 class="feedback hide"> 
+            </div>
+
+        </main>
+
+    </div>
+    <script src="./Assets/js/script.js"></script>
+</body>
+
+</html>
